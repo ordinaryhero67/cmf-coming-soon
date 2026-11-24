@@ -1,15 +1,92 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fae38d">
-<meta name="description" content="Curious Men Films. We make films driven by stories, not stars. Website coming soon.">
-<title>Curious Men Films — Coming Soon</title>
-<link rel="preload" href="assets/general-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face{font-family:General Sans;src:url('assets/general-sans-variable.woff2') format('woff2');font-weight:200 700;font-display:swap}
-*{box-sizing:border-box}html{background:#fae38d;color:#10110e}body{margin:0;font-family:General Sans,Arial,sans-serif;min-height:100svh;padding:36px 4.2vw 28px;display:grid;grid-template-rows:auto 1fr auto}header{display:flex;align-items:center;gap:16px}.brand-initials{font-size:29px;letter-spacing:-.075em;font-weight:650}.brand-name{border-left:1px solid #10110e60;padding-left:16px;font-size:17px;line-height:1.06;letter-spacing:-.04em;font-weight:600}main{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:35px 0 50px}.monogram{margin:0;font-size:min(40vw,57svh);line-height:.84;letter-spacing:-.085em;padding-right:.085em;font-weight:600;text-align:center}.tagline{margin:38px 0 0;font-size:clamp(22px,2.35vw,34px);font-weight:520;letter-spacing:-.035em;text-align:center;line-height:1.25;max-width:720px;text-wrap:balance}footer{border-top:1px solid #10110e45;padding-top:22px;text-align:center;font-size:16px;font-weight:550;letter-spacing:-.015em}main{animation:arrive .8s cubic-bezier(.2,.7,.3,1) both}@keyframes arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@media(max-width:600px){body{padding:27px 6vw 25px}.brand-initials{font-size:26px}.brand-name{font-size:15px}.monogram{font-size:40vw}.tagline{font-size:24px;max-width:330px;margin-top:29px}main{padding-bottom:70px}footer{font-size:15px;padding-top:20px}}@media(prefers-reduced-motion:reduce){main{animation:none}}
-</style></head>
-<body><header aria-label="Curious Men Films"><span class="brand-initials">CMF</span><span class="brand-name">curious<br>men films</span></header>
-<main><h1 class="monogram" aria-label="CMF — Curious Men Films">CMF</h1><p class="tagline">We make films driven by stories, not stars.</p></main>
-<footer>Website coming soon</footer></body></html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fae38d">
+  <meta name="description" content="Curious Men Films is an independent production house creating original fiction. We make films known for their stories, not just who stars in them.">
+  <title>Curious Men Films | Story-driven films</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/general-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="refinements.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden"><defs><filter id="cmf-logo-colour" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="linear" slope="1.179775280899" intercept="-0.179775280899"/><feFuncG type="linear" slope="0.907563025210" intercept="0.092436974790"/><feFuncB type="linear" slope="2.376470588235" intercept="-1.376470588235"/></feComponentTransfer></filter></defs></svg>
+  <a class="skip-link" href="#approach">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Curious Men Films home">curious<br>men films</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+  </header>
+  <nav id="navigation" class="navigation" aria-label="Main navigation" inert>
+    <div class="nav-label">Curious Men Films · Bengaluru</div>
+    <a href="#approach"><small>01</small> Our approach <span>↗</span></a>
+    <a href="#journey"><small>02</small> Our story <span>↗</span></a>
+    <a href="#founders"><small>03</small> The founders <span>↗</span></a>
+    <a href="#jhatpat"><small>04</small> Curious Micro Films <span>↗</span></a>
+    <a href="#contact"><small>05</small> Let's talk <span>↗</span></a>
+    <a class="nav-email" href="mailto:connect@curiousmenfilms.com">connect@curiousmenfilms.com</a>
+  </nav>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-stage"><h1 class="hero-type" id="hero-title" aria-label="Curious Men Films"><img class="hero-original-logo" src="assets/cmf-original.png" alt="" width="709" height="1853"><span>cmf</span></h1></div>
+      <div class="hero-bottom"><a href="#approach" class="scroll-cue">Scroll to discover <span>↓</span></a></div>
+    </section>
+
+    <section class="approach scroll-scene" id="approach" aria-label="Our approach">
+      <div class="approach-sticky">
+        <div class="burst" aria-hidden="true"><span class="asterisk-arm"></span><span class="asterisk-arm"></span><span class="asterisk-arm"></span><span class="asterisk-arm"></span></div>
+        <div class="approach-eyebrow eyebrow">01 / Our approach</div>
+        <h2 class="moving-headline">We make films known for their stories<span class="headline-comma">,</span> not just who stars in <span class="headline-stars">them.</span></h2>
+        <div class="approach-copy">
+          <p class="intro">We want audiences to come for the film and leave talking about the story.</p>
+          <p>Our films are built around strong writing, believable characters, and actors who serve the story. The story guides the casting and stays at the centre of every creative decision.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading"><div class="eyebrow">02 / Our journey</div><h2 id="journey-title" class="reveal">The story behind<br>Curious Men Films.</h2></div>
+      <div class="journey-scroller scroll-scene">
+        <div class="journey-sticky">
+          <div class="journey-track">
+            <article class="journey-chapter"><div class="chapter-copy"><span class="chapter-date">2016–2025</span><h3>Building<br>our craft.</h3><p>Our journey began with a short film in 2016. In the years that followed, we worked across corporate films, music videos, animation, and feature-film writing. We were building our craft while finding our way towards stories of our own.</p><span class="chapter-count">01 — 03</span></div><figure class="journey-image photo-frame"><img src="assets/journey-1.webp" alt="Behind the scenes on a music video set" loading="lazy" decoding="async" style="object-position:55% 50%"></figure></article>
+            <article class="journey-chapter"><div class="chapter-copy"><span class="chapter-date">BUILDING A BUSINESS</span><h3>Learning to build<br>a business.</h3><p>Making <em>Against All Odds</em>, a documentary about entrepreneurs, introduced us to people building companies across India. Their experiences made us think differently about our own work. We began building a business around documentary films and recurring podcast projects.</p><span class="chapter-count">02 — 03</span></div><figure class="journey-image photo-frame"><img src="assets/journey-2.webp" alt="Filming an interview for Against All Odds" loading="lazy" decoding="async" style="object-position:40% 50%"></figure></article>
+            <article class="journey-chapter"><div class="chapter-copy"><span class="chapter-date">A NEW CHAPTER</span><h3>Choosing the films<br>we wanted to make.</h3><p>The business was growing, but we wanted original fiction to become our main work.</p><p>Curious Micro Films became our next step: a way to write, shoot, and release stories regularly while building towards feature films and series.</p><span class="chapter-count">03 — 03</span></div><figure class="journey-image photo-frame"><img src="assets/journey-3.webp" alt="The Curious Men Films founders together on set" loading="lazy" decoding="async" style="object-position:50% 45%"></figure></article>
+          </div>
+          <div class="journey-progress" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="documentary" id="documentary" aria-labelledby="documentary-title">
+      <div class="documentary-heading"><div><span class="eyebrow">The documentary / Against All Odds</span><h2 id="documentary-title" class="reveal">Against All Odds.</h2></div><p>A documentary about entrepreneurs building software companies from unexpected corners of India.</p></div>
+      <div class="trailer-player" data-video="VRRQhBXMCuc">
+        <button class="trailer-play" aria-label="Play Against All Odds documentary trailer"><img src="assets/against-all-odds-trailer.jpg" alt="Against All Odds documentary trailer" loading="lazy" width="1280" height="720"><span class="trailer-shade"></span><span class="play-circle" aria-hidden="true">▶</span><span class="trailer-caption">Watch the trailer <span>Against All Odds · Curious Men Films</span></span></button>
+      </div>
+      <a class="trailer-external" href="https://www.youtube.com/watch?v=VRRQhBXMCuc" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+    </section>
+
+    <section class="founders" id="founders" aria-labelledby="founders-title">
+      <div class="section-heading"><div class="eyebrow">03 / The founders</div><h2 id="founders-title" class="reveal">The people<br>behind CMF.</h2><p class="section-deck">Three filmmakers bringing together experience in writing, direction, animation, and production.</p></div>
+      <div class="founder-grid">
+        <article class="founder reveal"><figure class="portrait photo-frame"><img src="assets/aniruddha.webp" alt="Aniruddha Khanwilkar" loading="lazy" decoding="async" style="object-position:50% 42%"></figure><div class="founder-title"><h3>Aniruddha<br>Khanwilkar</h3><span>Co-founder & CEO</span></div><p>A screenwriter with a decade of experience, including writing on two feature films. At CMF, he leads the business and the development of our stories.</p></article>
+        <article class="founder reveal"><figure class="portrait photo-frame"><img src="assets/akshay.webp" alt="Akshay S" loading="lazy" decoding="async" style="object-position:50% 45%"></figure><div class="founder-title"><h3>Akshay S</h3><span>Co-founder & COO</span></div><p>A filmmaker who has worked with Netflix and Amazon Prime. At CMF, he brings the people, planning, and execution together to get our stories made.</p></article>
+        <article class="founder reveal"><figure class="portrait photo-frame"><img src="assets/ritesh.webp" alt="Ritesh Varma filming with a camera" loading="lazy" decoding="async" style="object-position:50% 40%"></figure><div class="founder-title"><h3>Ritesh<br>Varma</h3><span>Co-founder & Creative Head</span></div><p>Seventeen years of experience in animation, alongside filmmaking and editing. At CMF, he shapes how our stories come to life through image, rhythm, and sound.</p></article>
+      </div>
+    </section>
+
+    <section class="jhatpat" id="jhatpat" aria-labelledby="jhatpat-title">
+      <div class="eyebrow">04 / What we’re building</div>
+      <h2 id="jhatpat-title" class="jhatpat-title reveal">Meet Curious<br>Micro Films<span>↗</span></h2>
+      <div class="jhatpat-intro"><h3>Cinema, made<br>for the phone.</h3><div><p>Curious Micro Films is our home for original short-form fiction. We make microfilms that tell a complete story in one release, and microdramas that unfold across episodes. Relatable characters, strong writing, and believable performances shape both.</p><p>Writing, shooting, and releasing regularly helps us become better filmmakers and build an audience that returns. It also gives us a way to discover which stories deserve further development into feature films and series.</p></div></div>
+      <div class="film-showcase"><figure class="film-poster micro-brand-card" aria-label="Curious Micro Films"><img class="micro-brand-logo" src="assets/curious-micro-films-supplied.png" alt="Curious Micro Films logo" loading="lazy" decoding="async"><span class="poster-type brand-poster-type" aria-hidden="true">curious<br>micro<br>films<span>✳</span></span></figure><div class="film-info"><span class="eyebrow">Our first microdrama / Comedy</span><h3 class="reveal">Nazar<br>Na Lagey.</h3><p>Two estranged cousins reconnect in Bengaluru. Then one discovers that the woman the other is about to meet for an arranged match is his ex.</p><p>A comedy about family, unresolved feelings, and spectacularly awkward timing.</p><a class="button" href="https://www.instagram.com/curiousmicrofilms/" target="_blank" rel="noopener noreferrer"><span>Watch on Instagram</span><span>↗</span></a></div><div class="series-artwork-pair"><div class="film-still series-artwork"><img src="assets/nazar-na-lagey-poster.webp" alt="Nazar Na Lagey title poster featuring two cousins as children" loading="lazy" decoding="async"></div><div class="film-still series-artwork"><img src="assets/nazar-na-lagey-screenshot.webp" alt="Nazar Na Lagey episode 7 on Instagram" loading="lazy" decoding="async"></div></div></div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="eyebrow">05 / The next chapter</div><h2 id="contact-title" class="reveal">Build the next<br>chapter with us.</h2><div class="contact-bottom"><div><p>We’re raising investment to grow Curious Men Films and create more original fiction.</p><p>If you share our belief in films driven by stories, we’d like to talk.</p><a class="email" href="mailto:connect@curiousmenfilms.com">connect@curiousmenfilms.com</a></div><a class="contact-arrow" href="mailto:connect@curiousmenfilms.com" aria-label="Let’s talk — email Curious Men Films">↗</a></div></section>
+  </main>
+  <footer><div class="footer-row"><span>Bengaluru, India</span><span>© 2026 Curious Men Films<br><a href="mailto:connect@curiousmenfilms.com">connect@curiousmenfilms.com</a><br><a href="tel:+919619033545">+91 96190 33545</a></span></div></footer>
+</body>
+</html>

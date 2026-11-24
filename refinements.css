@@ -1,0 +1,167 @@
+@font-face{font-family:'General Sans Variable';src:url('assets/general-sans-variable.woff2') format('woff2');font-weight:200 700;font-style:normal;font-display:swap}
+:root{--font:'General Sans Variable',Arial,sans-serif}
+body,button,input{font-family:var(--font);font-weight:400;font-variation-settings:'wght' 520}
+h1,h2,h3{font-family:var(--font);font-weight:400;font-variation-settings:'wght' 500}
+p,.chapter-copy p,.founder>p,.jhatpat-intro p,.film-info>p,.contact p,.section-deck{font-weight:400;font-variation-settings:'wght' 520;letter-spacing:0;line-height:1.55}
+.wordmark,.eyebrow,.image-id,.chapter-date,.chapter-count,.founder-title>span{font-weight:400;font-variation-settings:'wght' 600}
+.button,.email,.trailer-external,.trailer-caption{font-weight:400;font-variation-settings:'wght' 530}
+.hero-stage{height:auto;min-height:calc(100svh - 85px);isolation:isolate}
+.hero .hero-type{font-size:48vw;max-width:none;line-height:.75;letter-spacing:-.085em;font-variation-settings:'wght' 550;left:50%;top:50%;width:100%;text-align:center;transform:translate(-50%,-50%)}
+.hero .hero-type{padding-right:.085em}
+.hero-bottom{justify-content:flex-end}
+/* Original first-draft scroll composition, with visible supporting copy and a short final hold. */
+.approach{height:280svh}
+.approach-sticky{min-height:680px;padding-bottom:22svh}
+.moving-headline{top:17svh;font-variation-settings:'wght' 500;letter-spacing:-.035em}
+.approach-copy{position:relative;left:auto;top:auto;transform:none;opacity:1;width:min(740px,88%);text-align:center}
+.approach-copy .intro{font-size:clamp(24px,2.1vw,32px);font-weight:400;font-variation-settings:'wght' 520;line-height:1.5;letter-spacing:0;margin-bottom:22px}
+.approach-copy>p:not(.intro){font-size:clamp(18px,1.6vw,23px);font-weight:400;font-variation-settings:'wght' 520;line-height:1.55;letter-spacing:0;max-width:none}
+.chapter-copy p{font-size:18px;line-height:1.6}
+.eyebrow,.chapter-date,.chapter-count{font-size:12px}.chapter-count{opacity:.7}
+.image-id{font-size:10px}.image-placeholder figcaption{font-size:14px}.image-placeholder figcaption span{font-size:10px;opacity:.75}
+.founders .section-heading{display:grid;grid-template-columns:1fr;gap:0}
+.section-deck{position:static;width:min(680px,100%);font-size:21px;line-height:1.55;margin-top:32px}
+.founder>p{font-size:18px;line-height:1.6}
+.founder-title>span{font-size:14px;line-height:1.5}
+.jhatpat-intro p,.film-info>p{font-size:20px;line-height:1.6}
+.brand-poster-type{font-size:clamp(60px,8vw,125px)}
+.film-still{aspect-ratio:16/10;min-height:260px}
+.still-art{position:absolute;left:7%;right:7%;top:36%;font-size:clamp(30px,4.1vw,65px);line-height:1;letter-spacing:-.065em;color:#382353}
+.still-label{font-size:14px}.still-label small{font-size:10px;opacity:.75}
+.documentary{background:var(--yellow);padding:80px var(--gutter) 95px}
+.documentary-heading{display:grid;grid-template-columns:1.5fr 1fr;gap:7vw;align-items:end;margin-bottom:45px}
+.documentary-heading h2{font-size:clamp(42px,5.5vw,82px);margin-top:25px}
+.documentary-heading p{font-size:21px;line-height:1.55;max-width:390px}
+.trailer-player{position:relative;aspect-ratio:16/9;background:#10110e;overflow:hidden}
+.trailer-play{border:0;padding:0;width:100%;height:100%;background:none;color:white;cursor:pointer;display:block}
+.trailer-play img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.trailer-play:hover img{transform:scale(1.035)}
+.trailer-shade{position:absolute;inset:0;background:linear-gradient(transparent 45%,#000b)}
+.play-circle{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;border:1px solid #fff9;background:#10110e66;border-radius:50%;width:100px;height:100px;font-size:30px;padding-left:5px;transition:background .25s}
+.trailer-play:hover .play-circle{background:#10110ecc}
+.trailer-caption{position:absolute;left:35px;bottom:30px;text-align:left;font-size:27px;letter-spacing:-.03em}
+.trailer-caption>span{display:block;font-size:14px;letter-spacing:0;margin-top:7px}
+.trailer-player iframe{width:100%;height:100%;border:0}
+.trailer-external{display:inline-block;margin-top:18px;font-size:15px;border-bottom:1px solid currentColor;padding-bottom:3px}
+@media(max-width:900px){.chapter-copy p{font-size:16px}.section-deck{font-size:20px}.founder>p{font-size:16px}.documentary-heading{grid-template-columns:1fr}.documentary-heading p{max-width:650px}}
+@media(max-width:600px){.hero-stage{height:auto;min-height:calc(92svh - 85px)}.hero .hero-type{font-size:48vw;top:50%;left:50%;width:100%}.hero-bottom{justify-content:flex-end}.approach{height:250svh}.approach-sticky{min-height:690px;padding-bottom:21svh}.moving-headline{top:16svh;font-size:85px}.approach-copy{width:100%}.approach-copy .intro{font-size:23px;line-height:1.5;margin-bottom:20px}.approach-copy>p:not(.intro){font-size:18px;line-height:1.55}.section-deck{font-size:18px;line-height:1.6;margin-top:26px}.founder>p{font-size:17px}.founder-title>span{font-size:12px}.chapter-copy p{font-size:17px;line-height:1.6}.jhatpat-intro p,.film-info>p{font-size:18px;line-height:1.6}.documentary{padding-top:60px;padding-bottom:65px}.documentary-heading{gap:25px;margin-bottom:30px}.documentary-heading h2{font-size:42px}.documentary-heading p{font-size:18px}.play-circle{width:64px;height:64px;font-size:20px}.trailer-caption{left:18px;bottom:17px;font-size:19px}.trailer-caption>span{font-size:11px;margin-top:4px}.brand-poster-type{font-size:88px}.film-still{min-height:210px}.still-art{font-size:39px}.image-placeholder figcaption{font-size:12px}.image-placeholder figcaption span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.hero-type{translate:none!important}.approach{height:auto}.approach-sticky{height:auto;min-height:0;padding-top:60px;padding-bottom:70px;background:var(--white)}.moving-headline{position:static;white-space:normal;font-size:clamp(40px,7vw,100px);transform:none!important;margin:40px 0}.approach-copy{position:relative;left:auto;top:auto;transform:none;opacity:1!important;width:100%}}
+
+/* A4 image stays fully behind the centred lettering. */
+.hero-logo-placeholder{position:absolute;left:50%;top:50%;height:min(64svh,36vw);width:auto;aspect-ratio:210/297;transform:translate(-50%,-50%);z-index:0}
+.hero .hero-type{z-index:2;pointer-events:none}
+@media(max-width:600px){.hero-logo-placeholder{height:62vw;max-height:50svh}.hero-logo-placeholder .image-id{top:19px;left:18px;font-size:7px}.hero-logo-placeholder .frame-corners{inset:11px}.hero-logo-placeholder figcaption{font-size:8px;left:18px;right:18px;bottom:18px}.hero-logo-placeholder figcaption span{font-size:6px}}
+
+/* The reference transition uses broad, flat-ended asterisk arms, not pointed rays. */
+.approach{height:360svh}
+.moving-headline{transform-origin:left center}
+.burst{width:120vmax;height:120vmax;background:transparent;clip-path:none;visibility:hidden;transform:translate(-50%,-50%) scale(0);pointer-events:none}
+.asterisk-arm{position:absolute;left:0;top:38.75%;width:100%;height:22.5%;background:var(--white);transform-origin:50% 50%}
+.asterisk-arm:nth-child(2){transform:rotate(45deg)}
+.asterisk-arm:nth-child(3){transform:rotate(90deg)}
+.asterisk-arm:nth-child(4){transform:rotate(135deg)}
+@media(max-width:600px){.approach{height:330svh}}
+@media(prefers-reduced-motion:reduce){.approach{height:auto}.burst{display:none}}
+
+/* Keep the revised copy close to its heading, independent of paragraph length. */
+.approach-sticky{justify-content:flex-start;padding-top:calc(17svh + clamp(90px,12.1vw,190px)*1.12 + 56px);padding-bottom:40px}
+.journey>.section-heading{padding-top:72px;padding-bottom:0}
+.journey>.section-heading .chapter-note{bottom:0}
+.journey-sticky{align-items:center;padding-top:0}
+@media(max-width:600px){
+ .approach-sticky{padding-top:calc(16svh + 95.2px + 36px);padding-bottom:40px}
+ .journey>.section-heading{padding-top:60px;padding-bottom:28px}
+ .journey-sticky{padding-top:0}
+}
+@media(prefers-reduced-motion:reduce){.approach-sticky{padding-top:60px;padding-bottom:70px}}
+
+/* Balance the transition out of the centred horizontal scene. */
+@media(min-width:601px){.documentary{padding-top:56px}}
+.approach-copy .intro{margin-bottom:20px}
+
+/* Keep the trailer and founder introduction together as one continuous flow. */
+.documentary{padding-bottom:40px}
+.founders>.section-heading{padding-top:40px}
+@media(max-width:600px){.documentary{padding-bottom:28px}.founders>.section-heading{padding-top:32px}}
+
+/* Align the documentary title and synopsis with the trailer's left edge. */
+.documentary-heading{grid-template-columns:minmax(0,1fr);gap:20px}
+.documentary-heading p{max-width:660px;margin:0;text-wrap:pretty}
+@media(max-width:600px){.documentary-heading{gap:18px}}
+
+/* Photographs fill the existing image frames without changing their geometry. */
+.photo-frame{overflow:hidden}
+.photo-frame>img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Original, unaltered logo beside the live CMF type; no background placeholder. */
+.hero .hero-type{display:flex;align-items:center;justify-content:center;gap:3vw;font-size:min(40vw,68svh);padding-right:0}
+.hero-original-logo{display:block;flex:none;height:.82em;width:auto;max-width:15vw;object-fit:contain}
+.hero .hero-type>span{display:block;padding-right:.085em}
+@media(max-width:600px){.hero .hero-type{font-size:39vw;gap:3vw}}
+
+/* Shared hero colour, preserving the original logo pixels and white linework. */
+.hero .hero-type{color:#2d2735}
+.hero-original-logo{filter:url(#cmf-logo-colour)}
+
+/* Optical alignment accounts for the original image's white outer margins. */
+.hero .hero-type{gap:.6vw}
+.hero-original-logo{height:.845em;transform:translateY(.013em)}
+@media(max-width:600px){.hero .hero-type{gap:.6vw}}
+
+/* Original microfilms mark above the existing type and asterisk. */
+.micro-brand-card{position:relative;overflow:hidden}
+.micro-brand-logo{position:absolute;top:5%;left:50%;transform:translateX(-50%);height:44%;width:auto;filter:none}
+.micro-brand-card .brand-poster-type{top:55%;left:10%;font-size:clamp(48px,6.2vw,98px)}
+.micro-brand-card .brand-poster-type>span{font-size:clamp(50px,6vw,88px);right:-.7em;top:.95em}
+@media(max-width:600px){.micro-brand-card .brand-poster-type{font-size:16vw}.micro-brand-card .brand-poster-type>span{font-size:17vw;right:-.7em;top:.95em}}
+
+/* Supplied final logo, unchanged; enlarged 20 percent with balanced card spacing. */
+.micro-brand-logo{height:52.8%;top:1%;filter:none}
+.micro-brand-card .brand-poster-type{top:57%;left:8%;font-size:clamp(54px,6.8vw,108px)}
+.micro-brand-card .brand-poster-type>span{right:-.55em;top:1em}
+@media(max-width:600px){.micro-brand-card .brand-poster-type{font-size:16.5vw}.micro-brand-card .brand-poster-type>span{right:-.55em;top:1em}}
+
+/* Compact horizontal brand lockup, followed by the first series and portrait artwork. */
+.jhatpat-intro{margin-bottom:44px}
+.film-showcase{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:48px 8vw;align-items:center}
+.micro-brand-card{grid-column:1/-1;width:100%;aspect-ratio:3.2/1;display:flex;align-items:center;justify-content:center;gap:5%;padding:4%;transform:rotate(-1deg)}
+.micro-brand-logo{position:static;transform:none;height:20vw;max-height:300px;width:auto;flex:none}
+.micro-brand-card .brand-poster-type{position:relative;top:auto;left:auto;font-size:clamp(60px,8vw,125px);flex:none}
+.micro-brand-card .brand-poster-type>span{right:-.75em;top:1em}
+.film-info{padding-top:0}
+.film-showcase>.film-still{width:min(100%,360px);aspect-ratio:9/16;min-height:0;margin:0;justify-self:center}
+@media(max-width:600px){
+ .jhatpat-intro{margin-bottom:28px}
+ .film-showcase{display:flex;gap:32px;align-items:stretch}
+ .micro-brand-card{width:100%;aspect-ratio:1.8/1;gap:6%;padding:5%}
+ .micro-brand-logo{height:32vw;max-height:none}
+ .micro-brand-card .brand-poster-type{font-size:10.5vw}
+ .micro-brand-card .brand-poster-type>span{font-size:11vw;right:-.75em;top:1em}
+ .film-showcase>.film-still{width:min(82%,360px);margin:0 auto;align-self:center}
+}
+
+/* Matching portrait frames for the series title poster and a screenshot. */
+.film-showcase{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);column-gap:5vw}
+.series-artwork-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;width:100%;align-items:center}
+.series-artwork-pair>.film-still{width:100%;aspect-ratio:9/16;min-height:0;margin:0;transform:none}
+.series-artwork-pair .still-art{font-size:clamp(26px,3vw,48px)}
+.series-artwork-pair .image-id{font-size:11px;left:8%;right:8%}
+.series-artwork-pair .still-label{left:8%;right:8%;font-size:16px}
+.series-artwork-pair .still-label small{font-size:10px}
+@media(max-width:600px){
+ .series-artwork-pair{gap:14px}
+ .series-artwork-pair .still-art{font-size:7vw}
+ .series-artwork-pair .image-id{font-size:9px}
+ .series-artwork-pair .still-label{font-size:14px}
+ .series-artwork-pair .still-label small{font-size:9px}
+}
+
+.series-artwork-pair>.series-artwork{position:relative;overflow:hidden;background:#211e25}
+.series-artwork img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:contain}
+
+/* Match the screenshot frame to its original proportions, without cropping. */
+.series-artwork-pair>.series-artwork:nth-child(2){aspect-ratio:1047/2048;background:transparent}
+.series-artwork-pair>.series-artwork:nth-child(2) img{object-fit:contain}
+
+/* Equal image heights while preserving each artwork’s natural proportions. */
+.series-artwork-pair{grid-template-columns:minmax(0,.5625fr) minmax(0,.51123046875fr);align-items:start}
