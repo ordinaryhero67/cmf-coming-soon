@@ -165,3 +165,13 @@ p,.chapter-copy p,.founder>p,.jhatpat-intro p,.film-info>p,.contact p,.section-d
 
 /* Equal image heights while preserving each artwork’s natural proportions. */
 .series-artwork-pair{grid-template-columns:minmax(0,.5625fr) minmax(0,.51123046875fr);align-items:start}
+
+/* Draft 2: give the approach paragraphs more breathing room. */
+.approach-copy .intro{margin-bottom:40px}
+@media(max-width:600px){.approach-copy .intro{margin-bottom:32px}}
+
+/* Prominent, legible journey dates and chapter labels. */
+.journey .chapter-date{display:block;font-size:clamp(20px,1.7vw,25px);font-weight:700;font-variation-settings:'wght' 700;line-height:1.15;letter-spacing:-.025em;color:var(--ink);opacity:1;margin-bottom:24px}
+@media(max-width:600px){.journey .chapter-date{font-size:21px;margin-bottom:20px}}
+
+.approach-copy .intro{color:#2d2735}

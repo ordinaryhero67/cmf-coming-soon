@@ -84,16 +84,3 @@ window.addEventListener('resize',measure,{passive:true});
 reduceMotion.addEventListener('change',measure);
 document.fonts.ready.then(measure);
 measure();
-
-// Load the verified documentary trailer only after the visitor chooses to play it.
-const trailerPlayer=document.querySelector('.trailer-player');
-const trailerButton=document.querySelector('.trailer-play');
-trailerButton.addEventListener('click',()=>{
-  const iframe=document.createElement('iframe');
-  iframe.src='https://www.youtube-nocookie.com/embed/'+trailerPlayer.dataset.video+'?autoplay=1&rel=0';
-  iframe.title='Against All Odds — Documentary Trailer';
-  iframe.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
-  iframe.allowFullscreen=true;
-  iframe.referrerPolicy='strict-origin-when-cross-origin';
-  trailerPlayer.replaceChildren(iframe);
-});
